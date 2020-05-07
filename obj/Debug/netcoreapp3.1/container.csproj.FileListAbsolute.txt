@@ -1,0 +1,13 @@
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.exe
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.deps.json
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.runtimeconfig.json
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.runtimeconfig.dev.json
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.dll
+C:\Users\111\source\repos\container\container\bin\Debug\netcoreapp3.1\container.pdb
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.csprojAssemblyReference.cache
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.csproj.CoreCompileInputs.cache
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.AssemblyInfoInputs.cache
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.AssemblyInfo.cs
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.dll
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.pdb
+C:\Users\111\source\repos\container\container\obj\Debug\netcoreapp3.1\container.genruntimeconfig.cache
