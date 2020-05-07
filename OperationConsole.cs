@@ -62,7 +62,7 @@ namespace container
             WriteLine($"Объём груза - {cargo.getVolume()}");
         }
 
-        public static void selectContainer(Cargo cargo, AirContainer air) // Метод который даёт полную информацию о совместимости груза и контейнера, если всё ок, то в массив с успешными вариантами
+        public static void selectContainer(Cargo cargo, AirContainer air, Dictionary<double, string> options) // Метод который даёт полную информацию о совместимости груза и контейнера, если всё ок, то в массив с успешными вариантами
         {
             if (air.checkVolume(cargo))
             {
@@ -72,7 +72,7 @@ namespace container
                 WriteLine($"Стоимость перевозки составит - {air.getPrice(cargo)}");
                 WriteLine("-------------------------");
                 double temp = air.getPrice(cargo) / air.Percent(); // коэффициент оптимального выбора контейнера исходя из стоимости и загруженности
-                
+                options.Add(temp, "Аэроперевозка"); 
             }
             else
             {
@@ -81,7 +81,7 @@ namespace container
             }
         }
 
-        public static void selectContainer(Cargo cargo, SeaContainer sea)
+        public static void selectContainer(Cargo cargo, SeaContainer sea, Dictionary<double, string> options)
         {
             if (sea.checkVolume(cargo))
             {
@@ -91,7 +91,8 @@ namespace container
                 WriteLine($"Стоимость перевозки составит - {sea.getPrice(cargo)}");
                 WriteLine("-------------------------");
                 double temp = sea.getPrice(cargo) / sea.Percent(); // коэффициент оптимального выбора контейнера исходя из стоимости и загруженности
-                
+                options.Add(temp, "Перевозка по морю");
+
             }
             else
             {
@@ -100,7 +101,7 @@ namespace container
             }
         }
 
-        public static void selectContainer(Cargo cargo, TrainContainer train)
+        public static void selectContainer(Cargo cargo, TrainContainer train, Dictionary<double, string> options)
         {
             if (train.checkVolume(cargo))
             {
@@ -110,7 +111,7 @@ namespace container
                 WriteLine($"Стоимость перевозки составит - {train.getPrice(cargo)}");
                 WriteLine("-------------------------");
                 double temp = train.getPrice(cargo) / train.Percent(); // коэффициент оптимального выбора контейнера исходя из стоимости и загруженности
-                
+                options.Add(temp, "Перевозка на поезде");
             }
             else
             {
@@ -119,7 +120,7 @@ namespace container
             }
         }
 
-        public static void selectContainer(Cargo cargo, WagonContainer wagon)
+        public static void selectContainer(Cargo cargo, WagonContainer wagon, Dictionary<double, string> options)
         {
             if (wagon.checkVolume(cargo))
             {
@@ -129,7 +130,7 @@ namespace container
                 WriteLine($"Стоимость перевозки составит - {wagon.getPrice(cargo)}");
                 WriteLine("-------------------------");
                 double temp = wagon.getPrice(cargo) / wagon.Percent(); // коэффициент оптимального выбора контейнера исходя из стоимости и загруженности
-                
+                options.Add(temp, "Перевозка фурой");
             }
             else
             {
@@ -138,7 +139,7 @@ namespace container
             }
         }
 
-        public static void selectContainer(Cargo cargo, TruckContainer truck)
+        public static void selectContainer(Cargo cargo, TruckContainer truck, Dictionary<double, string> options)
         {
             if (truck.checkVolume(cargo))
             {
@@ -148,7 +149,7 @@ namespace container
                 WriteLine($"Стоимость перевозки составит - {truck.getPrice(cargo)}");
                 WriteLine("-------------------------");
                 double temp = truck.getPrice(cargo) / truck.Percent(); // коэффициент оптимального выбора контейнера исходя из стоимости и загруженности
-                
+                options.Add(temp, "Перевозка небольшим грузовичком");
             }
             else
             {
