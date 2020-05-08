@@ -69,7 +69,7 @@ namespace container
         public double Percent() // На сколько процентов заполнен контейнер.
         {
             double v = getVolume();
-            double percent = v / (MaxHeight * MaxLength * MaxWidth);
+            double percent =100 - v / (MaxHeight * MaxLength * MaxWidth) * 100;
             return percent;
         }
         public string Reset() // Опустошение контейнера

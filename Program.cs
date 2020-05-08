@@ -27,7 +27,7 @@ namespace container
             OperationConsole.selectContainer(cargo, wagon, options);
             OperationConsole.selectContainer(cargo, truck, options);
 
-            double min = air.getPrice(cargo);
+            double min = 1000000000;
             string str = "";
 
             foreach (var item in options)
